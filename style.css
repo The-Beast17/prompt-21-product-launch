@@ -1,0 +1,117 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+html ,body{
+    width : 100%;
+    height : 100%;
+}
+
+.page1{
+    height : 100%;
+    width : 100%;
+    background-color: rgb(255, 200, 0);
+    text-align: center;
+    font-family: "Montserrat";
+    
+}
+
+.page1 > h1 {
+     font-size : 5vw;
+     padding : 1vw;
+}
+.page1 > p {
+     font-size : 3vw;
+     line-height:4vw ;
+}
+
+.page1 .container{
+    height : 35%;
+    width : 60%;
+    /* border : 2px solid white; */
+    padding : 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 2vw;
+    margin :0 auto;
+    border-radius : 5px;
+}
+.page1 .container .outer-box{
+    height : 100%;
+    width : 20%;
+    /* border : 2px solid white; */
+    padding : 2vw;
+}
+
+.page1 .container .outer-box .box{
+    padding : 1vw;
+    font-size: 2vw;
+    background-color: azure;
+    border-radius : 5px;
+}
+.page1 .container .outer-box p{
+    font-size : 1vw;
+    font-weight : 600;
+    line-height: 5vh;
+}
+
+.page1 .img-box {
+    height : 40%;
+    width : 30%;
+    margin: 0% auto;
+}
+
+.page1 .img-box img {
+    height : 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width : 600px){
+     .page1 {
+        height : max-content;
+     }
+     .page1 >h1{
+        font-size: 10vw;
+        padding-top : 15vh;
+     }
+     .page1 >p{
+        font-size: 5vw;
+        line-height: 15vw;
+     }
+     
+    .page1 .container {
+        gap : 4vw;
+    }
+    .page1 .container .outer-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .page1 .container .outer-box .box{
+        font-size: 4vw;
+        height : 15vw;
+        width  : 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page1 .container .outer-box p{
+        font-size: 3vw;
+    }
+
+    .page1 .img-box{
+        width : 100%;
+        height : 40%
+    }
+
+    .page1 .img-box img{
+        width : 100%;
+        height : 100%
+    }
+}
